@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Personal Website</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>My Personal Website</h1>
+<nav>
+<a onclick="showPage('about')">About Me</a>
+<a onclick="showPage('hobbies')">Hobbies</a>
+</nav>
+</header>
+
+<!-- ABOUT PAGE -->
+<section id="about" class="content page active">
+<h2>About Me</h2>
+
+<img src="images/atinenpicture.jpg" width="200" height="200" class="center-img" alt="My Photo">
+
+<div class="box">
+<p>
+Hello! My name is Cyan Dieren Q. Atinen. I am 16 years old and I am in Grade 11. I am a friendly and hardworking person. I like to learn new things and try different activities. I want to improve myself every day and become a better person.
+</p>
+
+<p>
+I have many dreams for the future. My biggest dream is to have my own business someday. I want to be independent and successful. I know that reaching my dreams will take hard work, patience, and learning new skills.
+</p>
+
+<p>
+I believe it is very important to balance school, hobbies, and fun. I try to spend my time studying, practicing my hobbies, and being with my family and friends.
+</p>
+
+<p>
+I also like meeting new people and making new friends. I enjoy talking to others and learning from them.
+</p>
+</div>
+</section>
+
+<!-- HOBBIES PAGE -->
+<section id="hobbies" class="content page">
+<h2>My Hobbies</h2>
+
+<div class="hobby">
+<img src="images/basketball.jpg" alt="Playing Basketball">
+
+<div class="box">
+<p>
+One of my favorite hobbies is playing basketball. I love it because it keeps me healthy and strong. Basketball also teaches me teamwork, patience, and discipline.
+</p>
+</div>
+</div>
+
+<div class="hobby">
+<img src="images/hobby.jpg" alt="Other Hobbies">
+
+<div class="box">
+<p>
+Besides basketball, I also enjoy playing online games, reading, watching interesting videos, and exploring new topics.
+</p>
+
+<p>
+Spending time with my family and friends is very important to me because they make me happy and support me.
+</p>
+</div>
+</div>
+
+</section>
+
+<script>
+function showPage(pageId) {
+    let pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.classList.remove('active'));
+    document.getElementById(pageId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
